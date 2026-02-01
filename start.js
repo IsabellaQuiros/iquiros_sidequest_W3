@@ -5,11 +5,14 @@
 // 2) input handlers → what happens on click / key press on this screen
 // 3) a helper function to draw menu buttons
 
-let dice;
+let dice; // Preload image of dice for start screen
+let die; // Preload image of die for game screen
 
 function preload() {
   dice = loadImage("Images/two dice.png");
+  die = loadImage("Images/one die.png");
 }
+
 // ------------------------------------------------------------
 // Start screen visuals
 // ------------------------------------------------------------

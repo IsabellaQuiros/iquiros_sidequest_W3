@@ -27,20 +27,22 @@ const gameBtn = {
 // when currentScreen === "game"
 function drawGame() {
   // Set background colour for the game screen
-  background(240, 230, 140);
+  background(0);
 
   // ---- Title and instructions text ----
-  fill(0); // black text
+  fill(255); // White text
   textSize(32);
   textAlign(CENTER, CENTER);
-  text("Game Screen", width / 2, 160);
+  text("ROLL AWAY!", width / 2, 160);
 
   textSize(18);
   text(
-    "Click the button (or press ENTER) for a random result.",
+    "Click the button (or press ENTER) to roll the dice a random result.",
     width / 2,
     210,
   );
+
+  image(die, width / 3, 250, 250, 250); // Draw image of die
 
   // ---- Draw the button ----
   // We pass the button object to a helper function
