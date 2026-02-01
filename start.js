@@ -65,8 +65,8 @@ function drawStart() {
 // Called from main.js only when currentScreen === "start"
 function startMousePressed() {
   // For input checks, we only need x,y,w,h (label is optional)
-  const startBtn = { x: width / 2, y: 500, w: 240, h: 80 };
-  const instrBtn = { x: width / 2, y: 600, w: 240, h: 80 };
+  const startBtn = { x: width / 2, y: 500, w: 240, h: 80 }; // Adjusted to fit new button positions
+  const instrBtn = { x: width / 2, y: 600, w: 240, h: 80 }; // Adjusted to fit new button positions
 
   // If START is clicked, go to the game screen
   if (isHover(startBtn)) {
