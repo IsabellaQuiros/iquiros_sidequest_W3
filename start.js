@@ -11,6 +11,8 @@ let die; // Preload image of die for game screen
 function preload() {
   dice = loadImage("Images/two dice.png");
   die = loadImage("Images/one die.png");
+  die1 = loadImage("Images/1 die.png");
+  die2 = loadImage("Images/2 die.png");
 }
 
 // ------------------------------------------------------------

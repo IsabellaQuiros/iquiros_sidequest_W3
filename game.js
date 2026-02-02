@@ -36,11 +36,7 @@ function drawGame() {
   text("ROLL AWAY!", width / 2, 160);
 
   textSize(18);
-  text(
-    "Click the button (or press ENTER) to roll the dice a random result.",
-    width / 2,
-    210,
-  );
+  text("Click the button (or press ENTER) to roll the dice.", width / 2, 210);
 
   image(die, width / 3, 250, 250, 250); // Draw image of die
 

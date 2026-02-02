@@ -10,19 +10,20 @@
 // drawLose() is called from main.js
 // only when currentScreen === "lose"
 function drawLose() {
-  // Red-tinted background to communicate failure
-  background(255, 210, 210);
+  background(0);
 
-  fill(0);
+  fill(255, 0, 0);
   textAlign(CENTER, CENTER);
 
   // Main message
   textSize(40);
-  text("You Lose!", width / 2, 300);
+  text("YOU LOSE!", width / 2, 250);
+
+  image(die1, width / 3, 300, 250, 250);
 
   // Instruction text
   textSize(20);
-  text("Click or press R to return to Start.", width / 2, 360);
+  text("Click or press R to return to Start.", width / 2, 550);
 }
 
 // ------------------------------
