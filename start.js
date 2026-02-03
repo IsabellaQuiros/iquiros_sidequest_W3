@@ -7,12 +7,18 @@
 
 let dice; // Preload image of dice for start screen
 let die; // Preload image of die for game screen
+let wrongImages = [];
+let rightImages = [];
 
 function preload() {
   dice = loadImage("Images/two dice.png");
   die = loadImage("Images/one die.png");
-  die1 = loadImage("Images/1 die.png");
-  die2 = loadImage("Images/2 die.png");
+  wrongImages[0] = loadImage("Images/1 die.png");
+  wrongImages[1] = loadImage("Images/3 die.png");
+  wrongImages[2] = loadImage("Images/5 die.png");
+  rightImages[0] = loadImage("Images/2 die.png");
+  rightImages[1] = loadImage("Images/4 die.png");
+  rightImages[2] = loadImage("Images/6 die.png");
 }
 
 // ------------------------------------------------------------

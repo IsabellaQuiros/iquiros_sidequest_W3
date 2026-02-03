@@ -120,7 +120,9 @@ function triggerRandomOutcome() {
   // random() < 0.7 → 70% chance to win
   if (random() < 0.5) {
     currentScreen = "win";
+    chosenRightImage = null;
   } else {
     currentScreen = "lose";
+    chosenWrongImage = null;
   }
 }

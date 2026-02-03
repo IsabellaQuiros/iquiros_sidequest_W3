@@ -9,6 +9,8 @@
 // ------------------------------
 // drawLose() is called from main.js
 // only when currentScreen === "lose"
+let chosenWrongImage = null;
+
 function drawLose() {
   background(0);
 
@@ -19,7 +21,11 @@ function drawLose() {
   textSize(40);
   text("YOU LOSE!", width / 2, 250);
 
-  image(die1, width / 3, 300, 250, 250);
+  if (chosenWrongImage === null) {
+    chosenWrongImage = random(wrongImages);
+  }
+
+  image(chosenWrongImage, width / 3, 300, 250, 250);
 
   // Instruction text
   textSize(20);
