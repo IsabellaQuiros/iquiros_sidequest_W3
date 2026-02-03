@@ -120,9 +120,9 @@ function triggerRandomOutcome() {
   // random() < 0.7 → 70% chance to win
   if (random() < 0.5) {
     currentScreen = "win";
-    chosenRightImage = null;
+    chosenRightImage = null; // Resets chosen null value for win screen
   } else {
     currentScreen = "lose";
-    chosenWrongImage = null;
+    chosenWrongImage = null; // Resets chosen null value for a lose screen
   }
 }

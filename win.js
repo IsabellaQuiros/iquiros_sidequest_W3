@@ -13,7 +13,7 @@
 // ------------------------------------------------------------
 // drawWin() is called from main.js
 // only when currentScreen === "win"
-let chosenRightImage = null;
+let chosenRightImage = null; // Allows for one random pick
 
 function drawWin() {
   background(0);
@@ -25,11 +25,12 @@ function drawWin() {
   textSize(40);
   text("YOU WIN!", width / 2, 250);
 
+  // Allows for one random pick
   if (chosenRightImage === null) {
     chosenRightImage = random(rightImages);
   }
 
-  image(chosenRightImage, width / 3, 300, 250, 250);
+  image(chosenRightImage, width / 3, 300, 250, 250); // Draws chosen image
 
   // Instruction text
   textSize(20);

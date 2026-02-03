@@ -7,8 +7,8 @@
 
 let dice; // Preload image of dice for start screen
 let die; // Preload image of die for game screen
-let wrongImages = [];
-let rightImages = [];
+let wrongImages = []; // Calls array variable for wrong images
+let rightImages = []; // Calls array variable for right images
 
 function preload() {
   dice = loadImage("Images/two dice.png");

@@ -9,7 +9,8 @@
 // ------------------------------
 // drawLose() is called from main.js
 // only when currentScreen === "lose"
-let chosenWrongImage = null;
+
+let chosenWrongImage = null; // Allows for one random pick
 
 function drawLose() {
   background(0);
@@ -21,11 +22,12 @@ function drawLose() {
   textSize(40);
   text("YOU LOSE!", width / 2, 250);
 
+  // Allows for one random pick
   if (chosenWrongImage === null) {
     chosenWrongImage = random(wrongImages);
   }
 
-  image(chosenWrongImage, width / 3, 300, 250, 250);
+  image(chosenWrongImage, width / 3, 300, 250, 250); // Draws chosen image
 
   // Instruction text
   textSize(20);

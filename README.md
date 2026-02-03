@@ -35,6 +35,6 @@ Assets used can be found in the Images folder.
 ## GenAI
 
 The code was written by Dr. Karen Cochrane but she used GenAI to write the comments.
-Isabella Quiros used GenAI to generate the images used in the game.
+Isabella Quiros used GenAI to generate the images used in the game and to write some code changes involving image arrays and random selection.
 
 ---
